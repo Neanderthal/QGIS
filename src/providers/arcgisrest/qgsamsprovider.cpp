@@ -734,7 +734,7 @@ QImage QgsAmsProvider::draw( const QgsRectangle &viewExtent, int pixelWidth, int
         query.addQueryItem( QStringLiteral( "format" ), dataSource.param( QStringLiteral( "format" ) ) );
         query.addQueryItem( QStringLiteral( "layers" ), QStringLiteral( "show:%1" ).arg( dataSource.param( QStringLiteral( "layer" ) ) ) );
         query.addQueryItem( QStringLiteral( "transparent" ), QStringLiteral( "true" ) );
-        query.addQueryItem( QStringLiteral( "f" ), QStringLiteral( "image" ) );
+        //query.addQueryItem( QStringLiteral( "f" ), QStringLiteral( "image" ) );
         requestUrl.setQuery( query );
         mError.clear();
         mErrorTitle.clear();
